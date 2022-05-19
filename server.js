@@ -28,6 +28,10 @@ app.get("/pokemon/new", (req, res) => {
 //E
 
 //S
+app.get("/pokemon/:id", (req, res) => {
+  res.render("show.ejs", { poke: pokemon[req.params.id] });
+});
+
 app.listen(PORT, () => {
   console.log("Listening on port:", PORT);
 });
