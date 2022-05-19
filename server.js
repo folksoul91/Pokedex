@@ -26,7 +26,12 @@ app.get("/pokemon/new", (req, res) => {
 //C
 
 //E
-
+app.get("/pokemon/:indexOfPokemonArray/edit", (req, res) => {
+  res.render("edit.ejs", {
+    pokesingle: pokemon[req.params.indexOfPokemonArray],
+    index: req.params.indexOfPokemonArray,
+  });
+});
 //S
 app.get("/pokemon/:id", (req, res) => {
   res.render("show.ejs", { poke: pokemon[req.params.id] });
