@@ -10,14 +10,29 @@ app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("_method"));
 app.use(express.static("public"));
 
-// INDEX
+// Index route
 app.get("/pokemon", (req, res) => {
   res.render("index.ejs", { data: pokemon });
 });
 
-// N
+// New route
 app.get("/pokemon/new", (req, res) => {
   res.render("new.ejs");
+});
+app.post("/pokemon", (req, res) => {
+  console.log(req.body);
+  const createNewPokemon = {
+    img: "https://cdn-icons-png.flaticon.com/512/528/528101.png",
+    name: req.body.name,
+    type: req.body.type,
+    stats: {
+      hp: req.body.hp,
+      attack: req.body.attack,
+      defense: req.body.defense,
+    },
+  };
+  pokemon.push(createNewPokemon);
+  res.redirect("/pokemon");
 });
 //D
 
