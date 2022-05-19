@@ -20,13 +20,13 @@ app.get("/pokemon/new", (req, res) => {
   res.render("new.ejs");
 });
 app.post("/pokemon", (req, res) => {
-  console.log(req.body);
   const createNewPokemon = {
     img: "https://cdn-icons-png.flaticon.com/512/528/528101.png",
     name: req.body.name,
     type: req.body.type,
     stats: {
       hp: req.body.hp,
+      speed: req.body.speed,
       attack: req.body.attack,
       defense: req.body.defense,
     },
@@ -34,7 +34,7 @@ app.post("/pokemon", (req, res) => {
   pokemon.push(createNewPokemon);
   res.redirect("/pokemon");
 });
-//D
+//Delete route
 
 //U
 

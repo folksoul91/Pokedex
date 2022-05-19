@@ -8,12 +8,13 @@
     <title>Pokedex</title>
   </head>
   <body>
-    <img src="<%= poke.img %>" alt="poke pics" class="image" />
+    <img src="<%= poke.img %>" alt="pokemon pic" class="image" />
 
     <h3 class="show-name"><%= poke.name %></h3>
     <ul class="show-list">
-      <li class="show-type">Type: <%=poke.type.join(', ')%></li>
+      <li class="show-type">Type: <%=poke.type%></li>
       <li class="show-hp">HP: <%= poke.stats.hp %></li>
+      <li class="show-speed">Speed: <%= poke.stats.speed %></li>
       <li class="show-attack">Attack: <%= poke.stats.attack %></li>
       <li class="show-defense">Defense: <%= poke.stats.defense %></li>
     </ul>
