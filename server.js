@@ -16,7 +16,9 @@ app.get("/pokemon", (req, res) => {
 });
 
 // N
-
+app.get("/pokemon/new", (req, res) => {
+  res.render("new.ejs");
+});
 //D
 
 //U
