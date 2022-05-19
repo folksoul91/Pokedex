@@ -7,5 +7,50 @@
     <link rel="stylesheet" href="/public/style.css" />
     <title>Pokedex</title>
   </head>
-  <body></body>
+  <body>
+    <h1 class="update">Update/Edit Pokemon</h1>
+    <form
+      action="pokemon/<%= index %>?_method=PUT"
+      method="POST"
+      class="edit-form"
+    >
+      Name:
+      <input
+        type="text"
+        name="name"
+        class="edit-name"
+        placeholder="Enter name here"
+      /><br />
+      Type:
+      <input
+        type="text"
+        name="type"
+        class="edit-type"
+        placeholder="Enter type here"
+      /><br />
+      HP:
+      <input
+        type="text"
+        name="hp"
+        class="edit-hp"
+        placeholder="Enter hp here"
+      /><br />
+      Attack:
+      <input
+        type="text"
+        name="attack"
+        class="edit-attack"
+        placeholder="Enter attack here"
+      /><br />
+      Defense:
+      <input
+        type="text"
+        name="defense"
+        class="edit-defense"
+        placeholder="Enter defense here"
+      /><br />
+      <input type="submit" value="Edit Pokemon" class="edit-sub" />
+      <a href="/pokemon" class="back-to-index">Back to Pokedex</a>
+    </form>
+  </body>
 </html>
