@@ -4,10 +4,28 @@ const PORT = 3000;
 
 const pokemon = require("./models/pokemon");
 
-app.get("/", (req, res) => {
-  res.send("Hello World");
+// Middlewares
+const methodOverride = require("method-override");
+app.use(express.urlencoded({ extended: false }));
+app.use(methodOverride("_method"));
+app.use(express.static("public"));
+
+// INDEX
+app.get("/pokemon", (req, res) => {
+  res.render("index.ejs", { data: pokemon });
 });
 
+// N
+
+//D
+
+//U
+
+//C
+
+//E
+
+//S
 app.listen(PORT, () => {
   console.log("Listening on port:", PORT);
 });
