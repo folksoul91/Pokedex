@@ -35,7 +35,10 @@ app.post("/pokemon", (req, res) => {
   res.redirect("/pokemon");
 });
 //Delete route
-
+app.delete("/pokemon/:indexOfPokemonArray", (req, res) => {
+  pokemon.splice(req.params.indexOfPokemonArray, 1);
+  res.redirect("/pokemon");
+});
 //U
 
 //C
