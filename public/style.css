@@ -1,3 +1,290 @@
 body {
   background-color: rgb(134, 249, 211);
 }
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  margin: 25px;
+  border: 8px solid rgb(247, 218, 50);
+  border-radius: 10px;
+  background-color: #299692;
+  list-style: none;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+.list :hover {
+  background-color: rgb(76, 174, 174);
+}
+a {
+  text-decoration: none;
+}
+.home {
+  text-align: center;
+  color: #1f7471;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(45, 43, 43, 0.114);
+}
+
+.newPoke {
+  color: #1f7471;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.name {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  padding: 0%;
+}
+
+.delete {
+  background-color: rgb(222, 121, 121);
+  color: whitesmoke;
+  margin-left: 125px;
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid whitesmoke;
+  border-radius: 8px;
+  padding: 0%;
+  height: 40px;
+  width: 120px;
+}
+
+.edit {
+  margin-left: 150px;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  padding: 0%;
+}
+.img {
+  display: flex;
+  justify-content: center;
+}
+.image {
+  border: 6px solid rgb(247, 218, 50);
+  border-radius: 10px;
+}
+
+.show-list {
+  display: flex;
+  justify-content: center;
+}
+
+.show-name {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.show-type {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  border: 2.5px solid rgb(247, 218, 50);
+  width: 300px;
+  height: 55px;
+}
+
+.show-hp {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  border: 2.5px solid rgb(247, 218, 50);
+  width: 300px;
+  height: 55px;
+}
+
+.show-attack {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  border: 2.5px solid rgb(247, 218, 50);
+  width: 300px;
+  height: 55px;
+}
+
+.show-defense {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  color: whitesmoke;
+  border: 2.5px solid rgb(247, 218, 50);
+  width: 300px;
+  height: 55px;
+}
+
+.back {
+  margin-left: 35%;
+  color: rgb(247, 218, 50);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4em;
+  padding: 0%;
+  background-color: gray;
+  border: 5px solid rgb(247, 218, 50);
+  border-radius: 6px;
+}
+
+.new-form {
+  text-align: center;
+}
+.poke-img {
+  width: 500px;
+  height: 500px;
+  margin-bottom: 50px;
+}
+
+.in-name {
+  width: 15%;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 5px solid rgb(247, 218, 50);
+  border-radius: 5px;
+}
+
+.in-type {
+  width: 15%;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 5px solid rgb(247, 218, 50);
+  border-radius: 5px;
+}
+
+.in-hp {
+  width: 15%;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 5px solid rgb(247, 218, 50);
+  border-radius: 5px;
+}
+
+.in-attack {
+  width: 15%;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 5px solid rgb(247, 218, 50);
+  border-radius: 5px;
+}
+
+.in-defense {
+  width: 15%;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 5px solid rgb(247, 218, 50);
+  border-radius: 5px;
+}
+
+.add-new {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 55px;
+}
+
+.update {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  font-size: 3em;
+}
+
+.edit-form {
+  text-align: center;
+}
+
+.edit-name {
+  width: 20%;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 5px solid gold;
+  border-radius: 5px;
+}
+
+.edit-type {
+  width: 20%;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 5px solid gold;
+  border-radius: 5px;
+}
+
+.edit-hp {
+  width: 20%;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 5px solid gold;
+  border-radius: 5px;
+}
+.edit-speed {
+  width: 20%;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 5px solid gold;
+  border-radius: 5px;
+}
+
+.edit-attack {
+  width: 20%;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 5px solid gold;
+  border-radius: 5px;
+}
+
+.edit-defense {
+  width: 20%;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 5px solid gold;
+  border-radius: 5px;
+}
+
+.in-add {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(43, 173, 33);
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  border: 3px solid rgb(247, 218, 50);
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.edit-sub {
+  background-color: gray;
+  color: gold;
+  font-size: 2em;
+  border: 3px solid gold;
+}
+
+.back-to-index {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: white;
+}
