@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/public/style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <title>Pokedex</title>
   </head>
   <body>
@@ -15,18 +15,20 @@
 
     <div class="container">
       <ul class="list">
-        <% for(let i = 0; i < data.length; i++){ %>
+        <% for(let i = 0; i < pokeData.length; i++){ %>
         <li>
           <a href="/pokemon/<%= i %>">
-            <img src="<%= data[i].img %>" alt="" />
+            <img src="<%= pokeData[i].img %>" alt="" />
           </a>
           <a href="/pokemon/<%= i %>">
-            <h3 class="name"><%= data[i].name %></h3>
+            <h3 class="name"><%= pokeData[i].name %></h3>
           </a>
           <form action="/pokemon/<%= i %>?_method=DELETE" method="POST">
             <input type="submit" value="DELETE" class="delete" />
           </form>
-          <a href="/pokemon/<%= i %>/edit" class="edit">EDIT</a>
+          <div class="div-edit">
+            <a href="/pokemon/<%= i %>/edit" class="edit">EDIT</a>
+          </div>
         </li>
         <% } %>
       </ul>

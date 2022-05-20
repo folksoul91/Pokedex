@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/public/style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <title>Pokedex</title>
   </head>
   <body>
-    <img src="<%= poke.img %>" alt="pokemon pic" class="image" />
+    <div class="img">
+      <img src="<%= poke.img %>" alt="pokemon pic" class="image" />
+    </div>
 
     <h3 class="show-name"><%= poke.name %></h3>
     <ul class="show-list">
       <li class="show-type">Type: <%=poke.type%></li>
       <li class="show-hp">HP: <%= poke.stats.hp %></li>
-      <li class="show-speed">Speed: <%= poke.stats.speed %></li>
       <li class="show-attack">Attack: <%= poke.stats.attack %></li>
       <li class="show-defense">Defense: <%= poke.stats.defense %></li>
     </ul>
