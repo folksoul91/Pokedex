@@ -48,20 +48,24 @@ a {
 }
 
 .delete {
+  margin-left: 120px;
   background-color: rgb(222, 121, 121);
-  color: whitesmoke;
-  margin-left: 125px;
+  color: rgb(255, 255, 255);
   font-size: 1.5em;
   font-family: Arial, Helvetica, sans-serif;
-  border: 2px solid whitesmoke;
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 8px;
   padding: 0%;
   height: 40px;
   width: 120px;
 }
 
+.div-edit {
+  display: flex;
+  justify-content: center;
+}
+
 .edit {
-  margin-left: 150px;
   color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5em;
@@ -237,14 +241,6 @@ a {
   border: 5px solid gold;
   border-radius: 5px;
 }
-.edit-speed {
-  width: 20%;
-  margin: 10px 0;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 5px solid gold;
-  border-radius: 5px;
-}
 
 .edit-attack {
   width: 20%;
@@ -275,10 +271,12 @@ a {
 }
 
 .edit-sub {
-  background-color: gray;
-  color: gold;
+  background-color: rgb(43, 173, 33);
+  color: rgb(247, 218, 50);
   font-size: 2em;
-  border: 3px solid gold;
+  border: 3px solid gb(247, 218, 50);
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 .back-to-index {
